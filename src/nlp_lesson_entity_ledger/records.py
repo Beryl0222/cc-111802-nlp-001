@@ -10,9 +10,17 @@ class TextRecord:
     observed_at: str
     text: str
     context: str = ""
+    mentions: tuple = ()
 
     @classmethod
     def from_dict(cls, value):
+        mentions = []
+        for item in value.get("mentions") or []:
+            surface = item.get("surface") if isinstance(item, dict) else item
+            surface = str(surface or "").strip()
+            if not surface:
+                raise ValueError("提及缺少名称")
+            mentions.append({"surface": surface})
         record = cls(
             record_id=str(value.get("record_id", "")).strip(),
             source=str(value.get("source", "")).strip(),
@@ -20,6 +28,7 @@ class TextRecord:
             observed_at=str(value.get("observed_at", "")).strip(),
             text=str(value.get("text", "")),
             context=str(value.get("context", "")).strip(),
+            mentions=tuple(mentions),
         )
         if not record.record_id or not record.source or record.revision < 1 or not record.text.strip():
             raise ValueError("文本记录缺少身份、来源、有效修订号或正文")

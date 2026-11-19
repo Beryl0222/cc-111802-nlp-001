@@ -1,0 +1,37 @@
+[
+  {
+    "type": "merge_entities",
+    "source": "auto:学电",
+    "target": "auto:学生电源",
+    "created_at": "2026-11-19T10:00:00Z",
+    "note": "确认学电是学生电源的简称"
+  },
+  {
+    "type": "add_alias",
+    "entity_id": "auto:学生电源",
+    "alias": "电源",
+    "created_at": "2026-11-19T10:05:00Z",
+    "note": "三年级语境中电源指学生电源"
+  },
+  {
+    "type": "add_alias",
+    "entity_id": "auto:稳压电源",
+    "alias": "电源",
+    "created_at": "2026-11-19T10:06:00Z",
+    "note": "四年级语境中电源指稳压电源"
+  },
+  {
+    "type": "assign_mention",
+    "mention_id": "lesson-b@r2:电源#0",
+    "entity_id": "auto:稳压电源",
+    "created_at": "2026-11-19T10:10:00Z",
+    "note": "人工判定此处电源为稳压电源"
+  },
+  {
+    "type": "assign_mention",
+    "mention_id": "lesson-b@r2:电源#1",
+    "entity_id": "auto:稳压电源",
+    "created_at": "2026-11-19T10:11:00Z",
+    "note": "人工判定此处电源为稳压电源"
+  }
+]

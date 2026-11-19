@@ -1,0 +1,20 @@
+[
+  {
+    "record_id": "lesson-a",
+    "source": "school-synthetic",
+    "revision": 2,
+    "observed_at": "2026-11-19T09:00:00Z",
+    "text": "三年级电路课:学生电源配小灯泡和开关。",
+    "context": "教研演练",
+    "mentions": ["学生电源", "小灯泡", "开关"]
+  },
+  {
+    "record_id": "lesson-b",
+    "source": "school-synthetic",
+    "revision": 2,
+    "observed_at": "2026-11-19T09:05:00Z",
+    "text": "四年级电学课:稳压电源(电源)与滑动变阻器配套,电源需教师预调。",
+    "context": "教研演练",
+    "mentions": ["稳压电源", "电源", "滑动变阻器"]
+  }
+]

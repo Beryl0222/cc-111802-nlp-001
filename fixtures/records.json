@@ -1,18 +1,20 @@
 [
   {
-    "record_id": "lesson-entity-ledger-lesson-a",
+    "record_id": "lesson-a",
     "source": "school-synthetic",
     "revision": 1,
     "observed_at": "2026-11-18T09:00:00Z",
-    "text": "课案实体台账需要保留课程实体和原文依据。",
-    "context": "教研演练"
+    "text": "三年级电路课:学生电源(学电)配小灯泡,学电输出限制6V。",
+    "context": "教研演练",
+    "mentions": ["学生电源", "学电", "小灯泡"]
   },
   {
-    "record_id": "lesson-entity-ledger-lesson-b",
+    "record_id": "lesson-b",
     "source": "school-synthetic",
     "revision": 1,
     "observed_at": "2026-11-18T09:05:00Z",
-    "text": "教师复核课程实体时应查看课程语境。",
-    "context": "课堂练习"
+    "text": "四年级电学课:稳压电源与滑动变阻器配套使用。",
+    "context": "教研演练",
+    "mentions": ["稳压电源", "滑动变阻器"]
   }
 ]
