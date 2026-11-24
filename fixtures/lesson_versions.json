@@ -1,0 +1,40 @@
+[
+  {
+    "record_id": "electricity-lesson",
+    "source": "school-synthetic",
+    "revision": 1,
+    "observed_at": "2026-09-01T09:00:00Z",
+    "context": "小学三年级：认识简单电路",
+    "text": "甲组把电池接入电路，小灯泡亮了，学生观察灯泡。",
+    "mentions": [
+      {"id": "g1", "text": "甲组", "kind": "学生组"},
+      {"id": "cell1", "text": "电池", "kind": "器材"},
+      {"id": "bulb1", "text": "小灯泡", "kind": "器材"}
+    ],
+    "relations": [
+      {"subject": "甲组", "relation": "连接", "object": "电池",
+       "snippet": "甲组把电池接入电路"},
+      {"subject": "电池", "relation": "点亮", "object": "小灯泡",
+       "snippet": "电池接入电路，小灯泡亮了"}
+    ]
+  },
+  {
+    "record_id": "electricity-lesson",
+    "source": "school-synthetic",
+    "revision": 2,
+    "observed_at": "2026-10-15T09:00:00Z",
+    "context": "初中八年级：串联电路与电压测量（删去灯泡段落，改用电压表）",
+    "text": "第一小组使用电源和电压表完成串联测量，并记录电压表读数。",
+    "mentions": [
+      {"id": "g2", "text": "第一小组", "kind": "学生组"},
+      {"id": "power2", "text": "电源", "kind": "器材"},
+      {"id": "meter2", "text": "电压表", "kind": "器材"}
+    ],
+    "relations": [
+      {"subject": "第一小组", "relation": "使用", "object": "电源",
+       "snippet": "第一小组使用电源和电压表"},
+      {"subject": "第一小组", "relation": "记录", "object": "电压表",
+       "snippet": "记录电压表读数"}
+    ]
+  }
+]
